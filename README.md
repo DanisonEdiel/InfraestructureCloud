@@ -81,6 +81,7 @@ Campo obligatorio:
 ---
 
 ## 4. Qué devuelve Cloudinary
+  ```
 {
   "ok": true,
   "cloudinary": {
@@ -88,7 +89,9 @@ Campo obligatorio:
     "public_id": "visits/xxxxx"
   }
 }
-Trabajo realizado por:
+  ```
+
+## Trabajo realizado por:
 Nayeli – Integración Cloudinary
 
 ---
