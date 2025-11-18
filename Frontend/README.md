@@ -1,7 +1,7 @@
 
 # 📘 PROYECTO MULTICLOUD – LIBRO DE VISITAS DISTRIBUIDO
 ### Proyecto académico – Arquitectura Multicloud  
-### Equipo: Edison · Stalin · Sánchez · Nayeli · Willian
+### Equipo: Llanos · Stalin · Sánchez · Nayeli · Willian
 
 ---
 
@@ -24,7 +24,7 @@ Cada parte del flujo se procesa en un cloud distinto, formando un ecosistema com
 
 | Componente | Servicio Cloud | Responsable |
 |-----------|----------------|-------------|
-| Frontend | **Vercel** | Edison |
+| Frontend | **Vercel** | Llanos |
 | Backend API | **DigitalOcean** | Stalin |
 | Base de Datos | **Neon PostgreSQL** | Willian |
 | Almacenamiento de Imágenes | **Cloudinary** | Nayeli |
@@ -134,4 +134,4 @@ CREATE TABLE IF NOT EXISTS visits (
 
 Proyecto Multicloud – Libro de Visitas  
 Crown Institute – Arquitecturas Cloud  
-Equipo: Edison · Stalin · Sánchez · Nayeli · Willian
+Equipo: Llanos · Stalin · Sánchez · Nayeli · Willian
