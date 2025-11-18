@@ -62,10 +62,8 @@ Se creó un **Upload Preset** con los siguientes valores:
       });
     }
   });
+  ```
 ---
-
-
-
 
 ## 3. Cómo probar este endpoint
 En Postman:
