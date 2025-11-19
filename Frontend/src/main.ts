@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import '@/scss/style.scss'
-import { vuetify } from './plugins/vuetify'
+import vuetify from './plugins/vuetify'
 import router from './router'
 import { VueQueryPlugin, QueryClient, type VueQueryPluginOptions } from '@tanstack/vue-query'
 
