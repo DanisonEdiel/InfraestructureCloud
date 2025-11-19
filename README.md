@@ -26,7 +26,7 @@ Se crearon las siguientes credenciales (se cargan vía .env):
 > Nota: La carpeta final donde se guardan las imágenes (`visits/`) se envía desde el backend.
 
 ---
-##2. Dependencias necesarias
+## 2. Dependencias necesarias
     npm install express multer axios cors dotenv cloudinary
 ---
 
@@ -94,13 +94,13 @@ app.post("/upload", upload.single("photo"), async (req, res) => {
     });
   }
 });
-
+```
 app.listen(3000, () =>
   console.log("Servidor listo en http://localhost:3000")
 );
 
 ---
-##4. Cómo probar este endpoint
+## 4. Cómo probar este endpoint
 En Postman:
 Método: POST
 URL: http://localhost:3000/upload
@@ -111,7 +111,7 @@ Campo obligatorio:
 | Key   | Tipo | Descripción    |
 | ----- | ---- | -------------- |
 | photo | File | Imagen a subir |
-```
+
 ---
 ## 5. Qué devuelve Cloudinary
 {
