@@ -1,4 +1,4 @@
-README.md — Integración de Cloudinary (Parte de Nayeli)
+README.md
 # Integración de Cloudinary – Parte del Proyecto Multicloud (Nayeli)
 
 Esta sección del proyecto corresponde a la integración con **Cloudinary**, encargada
