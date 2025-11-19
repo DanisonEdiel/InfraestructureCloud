@@ -24,7 +24,7 @@ Cada parte del flujo se procesa en un cloud distinto, formando un ecosistema com
 
 | Componente | Servicio Cloud | Responsable |
 |-----------|----------------|-------------|
-| Frontend | **Vercel** | Llanos |
+| Frontend | **Vercel** | Llano |
 | Backend API | **DigitalOcean** | Stalin |
 | Base de Datos | **Neon PostgreSQL** | Willian |
 | Almacenamiento de Imágenes | **Cloudinary** | Nayeli |

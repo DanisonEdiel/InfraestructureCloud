@@ -1,0 +1,160 @@
+.auth-card, .auth-login, .auth-sc {
+    @media (max-width: 768px) {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 10px;
+        margin: 0 auto;
+                font-size: 15px;
+    }
+}
+
+// Ajustar tamaño de fuente de los textos en login para pantallas pequeñas
+/*@media (max-width: 768px) {
+    .auth, .auth-card, .auth-login, .auth-sc, .login-card, .v-card, .v-input, .v-label, .v-btn, .fancy-btn-wrapper ,label, input, h2, h3, h4, h5, h6, p, span, .v-field__input, .v-field__label, .v-btn__content, .v-input__control, .v-input__slot, .v-input__details {
+        font-size: 15px !important;
+    }
+    ::placeholder {
+        font-size: 15px !important;
+    }
+    h1 {
+        font-size: 22px !important;
+    }
+    h2 {
+        font-size: 18px !important;
+    }
+    h3, h4, h5, h6 {
+        font-size: 16px !important;
+    }
+}*/
+
+.auth{
+    z-index: 2;
+}
+.auth-card{
+    width: 100%;
+    max-width: 460px;
+}
+
+.min-vh-100{
+    min-height: 100vh !important;
+}
+
+.auth-divider{
+    span{
+        z-index: 1;
+    }
+    &::before{
+        position: absolute;
+        width: 100%;
+        border-top: thin solid rgb(229, 234, 239);
+        top: 50%;
+        content: "";
+        transform: translateY(50%);
+        left: 0;
+    }
+    &::after
+    {
+        position: absolute;
+        width: 100%;
+        border-top: thin solid rgb(var(--v-theme-borderColor));
+        top: 50%;
+        content: "";
+        transform: translateY(50%);
+        right: 0;
+    }   
+}
+
+
+.circle-top {
+    position: absolute;
+    top: -33%;
+    left: -14%;
+    border: 120px solid #0b2947;
+    height: 700px;
+    width: 700px;
+    display: block;
+    background: 0 0;
+    border-radius: 100%;
+    z-index: 1;
+}
+.circle-bottom {
+    img{
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    height: 450px;
+    width: 450px;
+    display: block;
+    background: 0 0;
+    z-index: 1;
+    opacity: .5;
+    }
+    
+}
+
+.auth-login {
+    max-width: 1160px !important;
+}
+
+.auth-sc {
+    size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.auth-img {
+    background: url(@/assets/images/backgrounds/work-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 101.5vh;
+    height: 100%;
+}
+
+.h-n80 {
+    height: calc(100vh - 80px);
+}
+
+@media screen and (max-width:1280px){
+    .mh-100{
+        height: 100% !important;
+    } 
+}
+
+@media screen and (max-width:600px){
+    .mw-100{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .auth-bg {
+        background-attachment: scroll;
+        background-size: cover;
+        min-height: 100vh;
+    }
+}
+
+
+// Mejoras para zoom y alta resolución
+@media screen and (min-resolution: 120dpi), screen and (-webkit-min-device-pixel-ratio: 1.25) {
+    .auth-bg {
+        background-size: cover;
+        background-position: center center;
+        min-height: 100vh;
+    }
+}
+
+// Para pantallas muy pequeñas
+@media screen and (max-width: 480px) {
+    .auth-bg {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+  .auth-img-col {
+    display: none !important;
+  }
+}

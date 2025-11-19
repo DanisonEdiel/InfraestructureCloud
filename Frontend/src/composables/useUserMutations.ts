@@ -1,31 +1,22 @@
 import { ref } from 'vue'
-import type { User } from './useUser'
+import { api } from '../api/axios';
+import { useMutation } from '@tanstack/vue-query';
 
-export function useUserMutations() {
-  const loading = ref(false)
-  const error = ref<string | null>(null)
-
-  async function saveUserMutation(user: User) {
-    loading.value = true
-    error.value = null
-    try {
-      const form = new FormData()
-      form.set('name', user.name)
-      form.set('email', user.email)
-      if (user.photo[0]) form.set('photo', user.photo[0])
-      const res = await fetch('https://httpbin.org/post', {
-        method: 'POST',
-        body: form
-      })
-      if (!res.ok) throw new Error('Error al guardar usuario')
-      return await res.json()
-    } catch (e: unknown) {
-      error.value = e instanceof Error ? e.message : 'Error'
-      throw e
-    } finally {
-      loading.value = false
-    }
-  }
-
-  return { saveUserMutation, loading, error }
+const savePost = async (formData: FormData): Promise<void> => {
+  const { data } = await api.post('/core/post', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  })
+  return data;
 }
+
+const usePostMutations = () => {
+  const savePostMutation = useMutation({
+    mutationFn: savePost
+  });
+  return {
+    savePostMutation,
+
+  };
+};
+
+export default usePostMutations;
