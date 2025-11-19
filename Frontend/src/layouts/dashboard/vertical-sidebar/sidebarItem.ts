@@ -19,27 +19,15 @@ export interface menu {
 const sidebarItem: menu[] = [
   { header: 'Inicio' },
   {
-    title: 'Publicaciones',
-    icon: 'si:dashboard-duotone',
-    to: 'dashboard',
+    title: 'Inicio',
+    icon: 'si:projects-fill',
+    to: 'post-create',
   },
-  { header: 'General' },
   {
     title: 'Lista de Publicaciones',
     icon: 'tdesign:file-teams',
     to: 'post-list',
   },
-  {
-    title: 'Crear publicación',
-    icon: 'si:projects-fill',
-    to: 'post-create',
-  },
 ];
 
-/**
- * Filtra los elementos del sidebar según los permisos del usuario
- * @param items Elementos del sidebar
- * @param userPermissions Permisos del usuario
- * @returns Elementos filtrados según los permisos
- */
 export default sidebarItem;

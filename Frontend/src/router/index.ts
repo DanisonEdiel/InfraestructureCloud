@@ -14,7 +14,6 @@ const routes: RouteRecordRaw[] = [
     path: "/dashboard",
     component: DashboardLayout,
     children: [
-      { name: "dashboard", path: "", component: PostDemo },
       {
         name: "post-create",
         path: "post-create",

@@ -13,9 +13,8 @@ export interface DataResponse {
 }
 
 export interface DataRequest {
-    id: number
     name: string
     comment: string
-    image_url: string
+    photo: string
     public_id: string
 }
