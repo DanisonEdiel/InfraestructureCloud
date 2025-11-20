@@ -52,8 +52,8 @@ const items = computed(() => {
 
 <template>
   <div class="page-wrapper maxWidth">
-    <v-card class="elevation-9 rounded-lg">
-      <v-toolbar class="px-4">
+    <v-card class="elevation-1 rounded-lg">
+      <v-toolbar color="surface" class="px-4">
         <v-toolbar-title class="heading">Usuarios</v-toolbar-title>
         <v-spacer />
         <v-text-field v-model="search" class="input" density="compact" variant="outlined" placeholder="Buscar"
@@ -73,7 +73,7 @@ const items = computed(() => {
         </v-alert>
         <v-skeleton-loader v-if="isDataFetching" type="table" class="mb-4" />
         <v-data-table :headers="headers" :items="items" :loading="isDataFetching" :search="search" items-per-page="10"
-          class="elevation-1 rounded-lg" :items-per-page-text="'Items por página'">
+          class="elevation-0 rounded-lg" :items-per-page-text="'Items por página'">
           <template #item.image_url="{ item, value }">
             <div class="d-flex align-center gap-3">
               <div class="py-1" v-if="isImageLink(value)">

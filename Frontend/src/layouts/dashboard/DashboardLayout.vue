@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
+import FooterPanel from './footer/FooterPanel.vue';
 import LoaderWrapper from './LoaderWrapper.vue';
 import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';
-import VerticalHeaderVue from './vertical-header/VerticalHeader.vue';
-import FooterPanel from './footer/FooterPanel.vue';
-import { onMounted } from 'vue';
 
 </script>
 
@@ -21,7 +19,6 @@ import { onMounted } from 'vue';
         </div>
       </v-main>
       <VerticalSidebarVue />
-      <VerticalHeaderVue />
     </v-app>
   </div>
 </template>

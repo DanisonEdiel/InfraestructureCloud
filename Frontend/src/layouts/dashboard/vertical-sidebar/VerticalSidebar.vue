@@ -8,10 +8,14 @@ const filteredSidebarMenu = sidebarItem;
 </script>
 
 <template>
-  <v-navigation-drawer left elevation="0" rail-width="60" mobile-breakpoint="lg" app class="leftSidebar"
-    expand-on-hover>
+  
+  <v-navigation-drawer left elevation="0" rail-width="60" mobile-breakpoint="lg" app top="0" class="leftSidebar">
     <div class="pa-5">
-      Aquí va un logo
+      <v-chip color="secondary" size="large" class="text-h3">
+        <span class="mr-2 px-3">
+          <v-icon icon="mdi-comment-text-outline" />
+        </span> Post's
+      </v-chip>
     </div>
     <!-- ---------------------------------------------- -->
     <!---Navigation -->

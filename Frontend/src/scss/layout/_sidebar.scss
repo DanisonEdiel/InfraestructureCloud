@@ -24,9 +24,10 @@
 .leftSidebar {
     box-shadow: none !important;
     left: 70px;
+    padding-inline: 14px;
 
     .logo {
-        padding-left: 70px;
+        padding-left: 7px;
     }
 
     .mini-icon {
@@ -59,7 +60,7 @@
     height: calc(100vh - 100px);
 }
 .scrollnavbar {
-    height: calc(100vh - 125px);
+    height: calc(100vh - 100px);
 
     .userbottom {
         position: fixed;
@@ -308,16 +309,9 @@
 
 @media screen and (max-width:1199px) {
     .leftSidebar {
+        padding-inline: 14px;
         &.v-navigation-drawer--active {
-            left: 80px !important;
             z-index: 9999 !important;
         }
     }
-}
-.v-navigation-drawer {
-    display: flex;
-    flex-direction: column;
-}
-.scrollnavbar, .sidebar-menus, .sidebar-footer {
-    min-height: 0;
 }

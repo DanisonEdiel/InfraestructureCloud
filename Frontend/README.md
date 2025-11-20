@@ -134,4 +134,4 @@ CREATE TABLE IF NOT EXISTS visits (
 
 Proyecto Multicloud – Libro de Visitas  
 Crown Institute – Arquitecturas Cloud  
-Equipo: Llanos · Stalin · Sánchez · Nayeli · Willian
+Equipo: Llano · Stalin · Sánchez · Nayeli · Willian
