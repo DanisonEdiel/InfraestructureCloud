@@ -69,7 +69,7 @@ async def track_middleware(request: Request, call_next):
             async with httpx.AsyncClient(timeout=1.0) as client:
                 await client.post(WORKER_URL, json={
                     "tipo": "backend",
-                    "ruta": "http://localhost:8000/get_data"
+                    "ruta": "http://164.92.96.210/get_data"
                 })
         except:
             pass   # Nunca interrumpas tu backend si falla el tracking
