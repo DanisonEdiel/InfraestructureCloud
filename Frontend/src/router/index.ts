@@ -1,15 +1,14 @@
+import DashboardLayout from "@/layouts/dashboard/DashboardLayout.vue";
+import UserList from "@/views/UserList.vue";
 import {
   createRouter,
   createWebHistory,
   type RouteRecordRaw,
 } from "vue-router";
 import UserView from "../views/UserView.vue";
-import UserList from "@/views/UserList.vue";
-import DashboardLayout from "@/layouts/dashboard/DashboardLayout.vue";
-import PostDemo from "@/views/PostDemo.vue";
 
 const routes: RouteRecordRaw[] = [
-  { path: "/", redirect: "/dashboard/post-list" },
+  { path: "/", redirect: "/dashboard/post-create" },
   {
     path: "/dashboard",
     component: DashboardLayout,
