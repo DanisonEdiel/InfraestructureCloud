@@ -14,7 +14,7 @@ const filteredSidebarMenu = sidebarItem;
       <v-chip color="secondary" size="large" class="text-h3">
         <span class="mr-2 px-3">
           <v-icon icon="mdi-comment-text-outline" />
-        </span> Post's
+        </span> Post'
       </v-chip>
     </div>
     <!-- ---------------------------------------------- -->
