@@ -2,6 +2,7 @@
 import { ref, computed, onUnmounted, watch } from 'vue'
 import usePostMutations from '@/composables/usePostMutations'
 import { DataRequest } from '@/models/Post'
+import { toast } from 'vue3-toastify';
 const emit = defineEmits<{ (e: 'posted'): void }>()
 
 const { savePostMutation } = usePostMutations()
@@ -43,6 +44,10 @@ const onSubmit = () => {
       form.value = { name: '', comment: '', photo: '', public_id: '' }
       files.value = null
       emit('posted')
+      toast.success('Publicación creada con éxito')
+    },
+    onError: (error) => {
+      toast.error(error.message)
     }
   })
 }
