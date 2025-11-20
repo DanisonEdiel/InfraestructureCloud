@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import AddPost from '@/components/posts/AddPost.vue';
 import Comments from '@/components/posts/Comments.vue';
-import PostItem from '@/components/posts/PostItem.vue';
 import useData from '@/composables/useData';
 import { computed } from 'vue';
 
@@ -32,12 +31,10 @@ const items = computed(() => {
 <template>
   <div>
     <v-container>
-      <AddPost @posted="dataQuery.refetch()" />
+      <AddPost class="mb-4" @posted="dataQuery.refetch()" />
       <Comments :items="items" />
     </v-container>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
