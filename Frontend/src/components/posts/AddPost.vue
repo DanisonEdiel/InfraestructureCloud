@@ -65,19 +65,19 @@ const onSubmit = () => {
             <v-textarea v-model="form.comment" variant="outlined" color="primary" rows="5" placeholder="Escribe tu comentario" />
             <v-row class="mt-2" dense>
               <v-col cols="12" md="6">
-                <v-text-field v-model="form.name" label="Nombre" variant="outlined" required />
+                <v-text-field v-model="form.name" label="Nombre" color="primary" required />
               </v-col>
               <v-col cols="12" md="6">
-                <v-text-field v-model="form.public_id" label="Identificador" variant="outlined" />
+                <v-text-field v-model="form.public_id" label="Identificador" color="primary" />
               </v-col>
             </v-row>
             <v-file-input class="mt-2" label="Subir imagen" accept="image/*" show-size clearable variant="outlined" prepend-inner-icon="mdi-image" v-model="files" />
           </v-col>
           <v-col cols="12" md="4">
-            <v-sheet v-if="previewUrl" rounded="lg" color="grey-lighten-4" class="pa-2">
+            <v-sheet v-if="previewUrl" rounded="lg" color="containerBg" class="pa-2">
               <v-img :src="previewUrl" :aspect-ratio="ratio" max-height="280" contain rounded="lg" />
             </v-sheet>
-            <v-sheet v-else rounded="lg" color="grey-lighten-4" class="pa-8 d-flex align-center justify-center">
+            <v-sheet v-else rounded="lg" color="lightText" class="pa-8 d-flex align-center justify-center">
               <span class="text-subtitle-2 opacity-80">Previsualiza tu imagen aquí</span>
             </v-sheet>
           </v-col>

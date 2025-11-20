@@ -53,7 +53,7 @@ const greetings = () => {
         <v-toolbar class="px-4" color="surface" density="comfortable">
           <v-toolbar-title class="text-h4 gradient-text"> ¡{{ greetings() }}! </v-toolbar-title>
           <v-spacer />
-          <v-text-field v-model="search" class="input" density="compact" variant="outlined" placeholder="Buscar" hide-details style="max-width: 280px" />
+          <v-text-field color="primary" v-model="search" class="input" density="compact" variant="outlined" placeholder="Buscar" hide-details style="max-width: 280px" />
           <v-btn class="ml-2" icon color="primary" variant="text" @click="dataQuery.refetch()"><v-icon icon="mdi-refresh" /></v-btn>
         </v-toolbar>
       </v-card>
